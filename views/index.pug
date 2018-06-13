@@ -1,7 +1,125 @@
 html
     head
         title Welcome to dylan-clauss !
-        link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet")
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
         link(rel="stylesheet", href="/css/navbar.css")
-        script
+        link(rel="stylesheet", href="/css/home.css")
     body
+        nav.navbar.header.navbar-default
+            .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') DC
+                #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='') /
+                        li
+                            a(href='') Blog
+                        li
+                            a.glyphicon-envelope(href='contact')  Contact
+
+        div.container.home
+            div.home-center
+                h1 Dylan Clauss
+                h2 Administrateur systèmes & réseaux en formation
+                div.cv
+                    a(href="/media/CV_CLAUSS_Dylan.pdf")
+                        span Télécharger mon CV
+                div.social
+                    a(href="https://www.linkedin.com/in/dylanclauss/" target="_blank")
+                        img.m-r(src="/icon/linkedin.png")
+                    a(href="mailto:clauss.dylan@gmail.com")
+                        img(src="/icon/gmail.png")
+            div.row
+                div.home-left.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.flex
+                        img(src="/icon/curriculum-vitae.png")
+                        h2 A propos
+                    div.apropos
+                        p Depuis mon plus jeune âge, je suis passionné par l'informatique, les jeux-vidéo et les nouvelles technologies. Grâce aux tutos, j'ai commencé à m'intéresser au développement web et à administrer des comptes utilisateurs.
+                div.home-right.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.flex
+                        img(src="/icon/body-building.png")
+                        h2 Compétences
+                    div.skills
+                        a(href="#")
+                            img(src="/icon/windows.png")
+                            span Windows Server
+                        a(href="#")
+                            img(src="/icon/linux.png")
+                            span Linux
+                        a(href="#")
+                            img(src="/icon/cisco.png")
+                            span Cisco
+                        a(href="#")
+                            img(src="/icon/vmware.png")
+                            span VMWare
+                        a(href="#")
+                            img(src="/icon/html-5.png")
+                            span HTML
+                        a(href="#")
+                            img(src="/icon/css-3.png")
+                            span CSS
+            div.row.top
+                div.home-left.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.flex
+                        img(src="/icon/graduate.png")
+                        h2 Formation
+                    div.school.flex
+                        div.s-date
+                            p 2016 - aujourd'hui
+                        div.s-name
+                            h3 YNOV informatique (Lyon)
+                            p Bachelor architecture informatique et systèmes d'information
+                    div.school.flex
+                        div.s-date
+                            p 2009 - 2012
+                        div.s-name
+                            h3 Lycée Louis Lapicque (Epinal)
+                            p Baccalauréat Sciences et Technologie de la Gestion
+                            p Spécialisé Comptabilité Finance d'Entreprise
+
+
+                div.home-right.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.flex
+                        img(src="/icon/worker.png")
+                        h2 Expérience
+                    div.school.flex
+                        div.s-date
+                            p juin - juillet 2018
+                            p 6 semaines
+                        div.s-name
+                            h3 Adapei 88
+                            p Stagiaire administrateur systèmes & réseaux
+                            p - RGPD participation à l'audit, élaboration de procédures, gestion des droits
+                            p - Diagnostic SI, élaboration d'un plan d'actions
+                    div.school.flex
+                        div.s-date
+                            p mai - juillet 2017
+                            p 6 semaines
+                        div.s-name
+                            h3 POLYVER
+                            p Stagiaire front-end
+                            a(href="https://polyver.fr" target="_blank")
+                                p polyver.fr
+                    div.school.flex
+                        div.s-date
+                            p 2012 - 2016
+                            p 4 ans
+                        div.s-name
+                            h3 Carrefour
+                            p Hôte de caisse
+
+
+
+
+    script(src="/js/jquery.min.js")
+    script(src="/js/bootstrap.min.js")

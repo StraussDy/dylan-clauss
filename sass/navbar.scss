@@ -1,3 +1,110 @@
 body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+
+.navbar {
+  background-color: #4b4b4b;
+  border-color: transparent;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 1px 5px rgba(54, 54, 54, 0.75);
   margin: 0;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #f29f44;
+  font-size: 34px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ca8537;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    color: #FFF;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-brand:hover {
+    color: #e3e3e3;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background: #f29f44;
+    border-color: transparent;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  -webkit-transition: color .2s,border-color .2s,background .2s;
+  transition-property: color, border-color, background;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFF;
+  background-color: #f29f44;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: #4b4b4b;
+  }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #FFFFFF;
+  background-color: #4b4b4b;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #f29f44;
+  border-color: transparent;
+  -webkit-transition: color .2s,border-color .2s,background .2s;
+  transition-property: color, border-color, background;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #D84765;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
 }

@@ -1,0 +1,163 @@
+.home {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.top {
+  padding-top: 100px;
+}
+
+.m-r {
+  margin-right: 20px;
+}
+
+.home-center {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 100px;
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #4b4b4b;
+  }
+  h2 {
+    font-size: 24px;
+    color: #4b4b4b;
+  }
+  img{
+    transition: transform .2s;
+  }
+  img:hover{
+    transform: scale(1.2);
+  }
+
+}
+
+.cv {
+  margin: 30px 0;
+  a {
+    color: #4b4b4b;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  span {
+    border: 1px solid #414141;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 22px;
+    transition-property: color, border-color, background;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+  }
+  span:hover {
+    border: 1px solid #f29f44;
+    color: #f29f44;
+    background-color: #4b4b4b;
+  }
+}
+
+.social {
+  padding: 10px;
+}
+
+.home-left {
+  img {
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    color: #4b4b4b;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-left {
+    padding-bottom: 50px;
+  }
+}
+
+.home-right {
+  img {
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+  }
+  h2 {
+    text-align: center;
+    padding-left: 10px;
+    margin: 0;
+    color: #4b4b4b;
+  }
+}
+
+.apropos {
+  padding-top: 20px;
+  p {
+    font-size: 14px;
+  }
+}
+
+.skills {
+  padding-top: 20px;
+  text-align: center;
+  img {
+    width: 64px;
+    height: 64px;
+    margin-right: 25px;
+    margin-top: 5px;
+  }
+  a span{
+    position:absolute;
+    margin-top:23px;
+    margin-left:-35px;
+    color: #f29f44;
+    background-color: #4b4b4b;
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+  }
+  a:hover span, a:focus span{
+    transform:scale(1) rotate(0);
+    opacity:1;
+  }
+}
+
+.school {
+  padding-top: 50px;
+}
+
+.s-date {
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #b4b4b4;
+  p {
+    margin: 0;
+  }
+}
+
+.s-name {
+  width: 70%;
+  margin-left: 10px;
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  p {
+    margin: 0;
+  }
+}

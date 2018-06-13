@@ -18,7 +18,6 @@
   "homepage": "https://github.com/StraussDy/dylan-clauss#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bootstrap": "^4.1.1",
     "express": "^4.16.3",
     "gulp-cssnano": "^2.1.3",
     "gulp-sourcemaps": "^2.6.4",
