@@ -35,8 +35,19 @@
   }
 }
 
+#messenger {
+  position: absolute;
+  padding-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  white-space: nowrap;
+  color: #4b4b4b;
+}
+
 .cv {
   margin: 30px 0;
+  padding-top: 50px;
   a {
     color: #4b4b4b;
   }
@@ -74,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 1183px) {
+@media screen and (max-width: 1200px) {
   .back {
     img{
       height: 1015px;
@@ -82,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 972px) {
+@media screen and (max-width: 992px) {
   .back {
     img{
       height: 1060px;
@@ -142,6 +153,7 @@
   padding-top: 20px;
   p {
     font-size: 14px;
+    margin: 0;
   }
 }
 
@@ -156,8 +168,8 @@
   }
   a span{
     position:absolute;
-    margin-top:23px;
-    margin-left:-35px;
+    margin-top: -50px;
+    margin-left: -110px;
     color: #f29f44;
     background-color: #4b4b4b;
     padding:15px;
@@ -201,9 +213,47 @@
   p {
     margin: 0;
   }
+  a {
+    color: #b77633;
+  }
 }
 
 .section3 {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+}
+
+.hobby {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.hobby-title {
+  h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hobby-title {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hobby-title {
+    padding-bottom: 50px;
+  }
+}
+
+.hobby-text {
+  img {
+    width: 64px;
+    height: 64px;
+  }
+  p {
+    padding-left: 20px;
+  }
 }

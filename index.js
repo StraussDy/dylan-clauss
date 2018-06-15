@@ -11,5 +11,13 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
+app.get('/blog', (req, res) => {
+    res.render('blog');
+});
+
 
 app.listen(3000);

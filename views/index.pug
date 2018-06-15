@@ -7,8 +7,8 @@ html
         link(href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet")
         link(rel="stylesheet", href="/css/bootstrap.min.css")
         link(rel="stylesheet", href="/css/navbar.css")
-        link(rel="stylesheet", href="/css/gallery.css")
         link(rel="stylesheet", href="/css/home.css")
+        link(rel="stylesheet", href="/css/footer.css")
     body
         nav.navbar.header.navbar-default
             .container
@@ -23,17 +23,16 @@ html
                         li
                             a(href='') /
                         li
-                            a(href='') Blog
+                            a(href='/blog') Blog
                         li
-                            a.glyphicon-envelope(href='contact')  Contact
-
+                            a.glyphicon-envelope(href='/contact')  Contact
         div.section1
             div.container
                 div.home-center
                     h1 Dylan CLAUSS
-                    h2 Administrateur systèmes & réseaux en formation
+                    div(id="messenger")
                     div.cv
-                        a(href="/media/CV_CLAUSS_Dylan.pdf")
+                        a(href="/media/CV_CLAUSS_Dylan.pdf" target="_blank")
                             span Télécharger mon CV
                     div.social
                         a(href="https://www.linkedin.com/in/dylanclauss/" target="_blank")
@@ -50,28 +49,29 @@ html
                             img(src="/icon/curriculum-vitae.png")
                             h2 A propos
                         div.apropos
-                            p Depuis mon plus jeune âge, je suis passionné par l'informatique, les jeux-vidéo et les nouvelles technologies. Grâce aux tutos, j'ai commencé à m'intéresser au développement web et à administrer des comptes utilisateurs.
+                            p Farceur, bosseur, inovateur, ordinateur, trop de rimes, j'en peux plus.
+                            p Etudiant autonome et sympathique qui a trouvé sa voie dans l'informatique.
                     div.home-right.col-xs-12.col-sm-6.col-md-6.col-lg-6
                         div.flex
                             img(src="/icon/body-building.png")
-                            h2 Compétences
+                            h2(id="#skills") Compétences
                         div.skills
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/windows.png")
                                 span Windows Server
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/linux.png")
                                 span Linux
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/cisco.png")
                                 span Cisco
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/vmware.png")
                                 span VMWare
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/html-5.png")
                                 span HTML
-                            a(href="#")
+                            a(href="#skills")
                                 img(src="/icon/css-3.png")
                                 span CSS
                 div.row.top
@@ -85,7 +85,7 @@ html
                             div.s-name
                                 h3 YNOV informatique (Lyon)
                                 p Bachelor architecture informatique et systèmes d'information
-                                a(href="https://www.ynov.com/formation/ynov-informatique/")
+                                a(href="https://www.ynov.com/formation/ynov-informatique/" target="_blank")
                                     p ynov.com
                         div.school.flex
                             div.s-date
@@ -106,7 +106,7 @@ html
                                 p 6 semaines
                             div.s-name
                                 h3 Adapei 88
-                                p Stagiaire administrateur systèmes & réseaux
+                                p Stagiaire administrateur système
                                 p - RGPD participation à l'audit, élaboration de procédures, gestion des droits
                                 p - Diagnostic SI, élaboration d'un plan d'actions
                         div.school.flex
@@ -159,8 +159,48 @@ html
                                 h3 Permis A
         div.section3
             div.container
+                div.hobby
+                    h1 Temps libre
+                div.row
+                    div.hobby-title.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        h2 Réparation de PC
+                        div.hobby-text.flex
+                            img(src="/icon/gaming.png")
+                            p C'est vrai, j'aime fabriquer et réparer les ordinateurs. Les composants et câbles ne me font pas peur.
+                    div.hobby-title.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        h2 Cuisine
+                        div.hobby-text.flex
+                            img(src="/icon/chef.png")
+                            p Plus fort que les chefs de Top chef, j'adore cuisiner et faire goûter mes compositions.
+                    div.hobby-title.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        h2 Jeux vidéo
+                        div.hobby-text.flex
+                            img(src="/icon/ps4.png")
+                            p Idôlatre de la Playstation, grand friand de jeux comme : Assassin's Creed, Grand Theft Auto, Fifa
+        div.footer
+            div.container
+                div.row
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                        h3 Plan du site
+                        a(href="")
+                            p Blog
+                        a(href="")
+                            p Contact
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                        h3 Réseaux Sociaux
+                        div.flex.footer-img
+                            a(href="https://www.linkedin.com/in/dylanclauss/" target="_blank")
+                                img.m-r(src="/icon/linkedin.png")
+                            a(href="mailto:clauss.dylan@gmail.com")
+                                img.m-r(src="/icon/gmail.png")
+                            a(href="https://github.com/StraussDy" target="_blank")
+                                img.m-r(src="/icon/github.png")
+                            a(href="https://twitter.com/StraussDy" target="_blank")
+                                img(src="/icon/twitter.png")
 
-
+                div.copyright
+                    p © Dylan CLAUSS - Tous droits réservés
 
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
