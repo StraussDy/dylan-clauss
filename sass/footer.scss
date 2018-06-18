@@ -2,8 +2,12 @@
   background-color: #4b4b4b;
   color: #f29f44;
   padding: 20px 0;
+  h3 {
+    font-size: 16px;
+  }
   p{
     margin: 0;
+    font-size: 14px;
   }
   a{
     color: #d1d1d1;
@@ -13,6 +17,9 @@
 .footer-img {
   img{
     transition: transform .2s;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
   }
   img:hover{
     transform: scale(1.2);

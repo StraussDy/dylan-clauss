@@ -8,6 +8,7 @@ html
         link(rel="stylesheet", href="/css/bootstrap.min.css")
         link(rel="stylesheet", href="/css/navbar.css")
         link(rel="stylesheet", href="/css/contact.css")
+        link(rel="stylesheet", href="css/footer.css")
     body
         nav.navbar.header.navbar-default
             .container
@@ -20,8 +21,48 @@ html
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav.navbar-right
                         li
-                            a(href='') /
-                        li
-                            a(href='blog') Blog
+                            a(href='/') Blog
                         li
                             a.glyphicon-envelope(href='contact')  Contact
+        div.section1
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.5918991726485!2d4.86543031573534!3d45.739278523066865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea0a0556c93f%3A0x1e6be51c00aa975d!2sImpasse+Bazat%2C+69008+Lyon!5e0!3m2!1sfr!2sfr!4v1529322516336" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+        div.section2
+            div.container
+                h1 Contact
+                div.row
+                    div.contact-info.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        img(src="/icon/smartphone.png")
+                        p 06 27 37 29 23
+                    div.contact-info.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        img(src="/icon/gmail.png")
+                        p clauss.dylan@gmail.com
+                    div.contact-info.col-xs-12.col-sm-6.col-md-4.col-lg-4
+                        img(src="/icon/address.png")
+                        p 19 impasse Bazat 69008 Lyon
+
+
+        div.footer
+            div.container
+                div.row
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                        h3 Plan du site
+                        a(href="/")
+                            p Blog
+                        a(href="contact")
+                            p Contact
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                    div.col-xs-12.col-sm-6.col-md-6.col-lg-6
+                        h3 Réseaux Sociaux
+                        div.flex.footer-img
+                            a(href="https://www.linkedin.com/in/dylanclauss/" target="_blank")
+                                img.m-r(src="/icon/linkedin.png")
+                            a(href="https://github.com/StraussDy" target="_blank")
+                                img.m-r(src="/icon/github.png")
+                            a(href="https://twitter.com/StraussDy" target="_blank")
+                                img(src="/icon/twitter.png")
+
+                div.copyright
+                    p © Dylan CLAUSS - Tous droits réservés
+
+        script(src="/js/jquery.min.js")
+        script(src="/js/bootstrap.min.js")

@@ -8,8 +8,9 @@ var Messenger = function(el){
         m.current_length = 0;
         m.fadeBuffer = false;
         m.messages = [
-            'Administrateur systèmes en formation',
-            'qui recherche une alternance',
+            'Administrateur systèmes',
+            'en formation',
+            'recherche une alternance',
             'pour septembre 2018.',
             'Contactez moi ;)'
         ];

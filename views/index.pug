@@ -5,10 +5,10 @@ html
         meta(http-equiv="x-ua-compatible" content="ie=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet")
-        link(rel="stylesheet", href="/css/bootstrap.min.css")
-        link(rel="stylesheet", href="/css/navbar.css")
-        link(rel="stylesheet", href="/css/home.css")
-        link(rel="stylesheet", href="/css/footer.css")
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/navbar.css")
+        link(rel="stylesheet", href="css/home.css")
+        link(rel="stylesheet", href="css/footer.css")
     body
         nav.navbar.header.navbar-default
             .container
@@ -21,11 +21,9 @@ html
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav.navbar-right
                         li
-                            a(href='') /
+                            a(href='/') Blog
                         li
-                            a(href='/blog') Blog
-                        li
-                            a.glyphicon-envelope(href='/contact')  Contact
+                            a.glyphicon-envelope(href='contact')  Contact
         div.section1
             div.container
                 div.home-center
@@ -191,11 +189,9 @@ html
                         h3 Réseaux Sociaux
                         div.flex.footer-img
                             a(href="https://www.linkedin.com/in/dylanclauss/" target="_blank")
-                                img.m-r(src="/icon/linkedin.png")
-                            a(href="mailto:clauss.dylan@gmail.com")
-                                img.m-r(src="/icon/gmail.png")
+                                img(src="/icon/linkedin.png")
                             a(href="https://github.com/StraussDy" target="_blank")
-                                img.m-r(src="/icon/github.png")
+                                img(src="/icon/github.png")
                             a(href="https://twitter.com/StraussDy" target="_blank")
                                 img(src="/icon/twitter.png")
 

@@ -1,0 +1,30 @@
+.section2 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  h1 {
+    padding-bottom: 30px;
+    margin: 0;
+    border-bottom: solid 1px #c7c7c7;
+  }
+}
+
+.contact-info {
+  padding-top: 30px;
+  p {
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-info {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-info {
+    padding-top: 20px;
+  }
+}
